@@ -1,0 +1,344 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>NikhilKumarAman</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>
+#dashboard{
+        font-size: x-large;
+        padding: 100px 0px;
+        display: none;
+        border: 4px solid rgb(72,190,194);
+        text-align: center;
+      }
+    #cards{
+      color: whitesmoke;
+      background-color: #11acb5;
+    width:18.8% !important;
+  }
+    #card{
+      /*background-image: url("https://drive.google.com/uc?export=view&id=1Q1tt6WVCv87G1_DMvOzg3Fn2mj3dm37C");*/
+      color: whitesmoke;
+      background-color: red;
+    } 
+ *{
+  margin: 0;
+  padding:0;
+        }
+div.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:110px;
+  border-bottom:1px solid #0724a7;
+  background-color: whitesmoke;
+  z-index: 1;
+}
+aside {
+  width: fit-content;
+  height: 560px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  
+  float: left;
+  
+  background-color: white;
+}
+aside.scrollbar{
+overflow-x: hidden;
+overflow-y: scroll;
+color: white;
+}
+aside.scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+
+.navbar{
+  color:white;
+  position: absolute;
+  margin-left: 68%;
+  text-decoration: none;
+  left:0px;
+}
+h2{
+  font-size: x-large;
+}
+h3{
+  background: rgba(0,0,0,.1);
+  padding: 5px ;
+  margin-top: 20px;
+}
+@media screen and (min-width: 900px) and (max-width: 1500px) {
+  #lotslider{
+    
+      width:67% !important;
+      
+  }
+ }
+  @media screen and (min-width: 600px)and (max-width: 900px) {
+    #lotslider{
+      font-size: 10px !important;
+      width:57% !important;
+      
+  }
+  #lotslider>ul>h2{
+    
+    font-size: 14px !important;
+  }
+  
+  #card{
+  width:100% !important;
+  }
+  #cards{
+    width:17.5% !important;
+  }}
+  @media screen and (min-width: 965px) and (max-width:1300px){
+    #namefield{
+      font-size: 15px !important;
+      text-align: left !important;
+      
+    }
+    .navbar{
+  margin-left: 50% !important;
+}
+  }
+  @media screen and (max-width:965px){
+    .navbar{
+  margin-left: 1% !important;
+}
+.ACADEMICYEAR{
+  display: none;
+}
+  }
+  @media screen and (min-width: 720px) and (max-width:965px){
+    #namefield{
+      font-size: 10px !important;
+      text-align: left !important;
+      
+    }
+  
+  }
+  @media screen and (min-width: 400px) and (max-width:719px){
+    #namefield{
+      font-size: 10px !important;
+      text-align: left !important;
+      
+    }
+  }
+
+  @media screen and (max-width:480px){
+    #regis{
+     display: none;
+    }
+    
+  }
+  @media screen and (max-width:500px){
+    #screen{
+     display: none;
+    }
+    footer{
+      display: block;
+      margin-top: 40%;
+    }
+    
+  }
+  
+  @media screen and (max-width:400px){
+    #namefield{
+      font-size: 5px !important;
+      text-align: left !important;
+      
+    }
+    
+  }
+  @media screen and (min-width: 400px) and (max-width: 600px) {
+    #lots{
+    display: none;
+  }
+  #nsplogo{
+    display:none;
+  }
+  #scholarshiptag{
+    left: 1% !important;
+  }
+
+  #card{
+  width:100% !important;
+  height: 80px !important;
+  }
+  
+  #grayslot{
+    top: 80px !important;
+  }
+  #cards{
+    width:16.5% !important;
+    height: 200px !important;
+    font-size: 10px !important;
+  }
+  #testimony{
+    font-size: 10px !important;
+  }
+  #testimonys{
+    font-size: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+  }
+}
+#contactus {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+@media screen and  (max-width: 250px) {
+    footer{
+    font-size:8px;
+  }
+}
+    </style>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+    
+     
+    $(document).ready(function(){
+      $("#login").on({
+       click: function(){
+         window.location.href="https://black-devil963.github.io/logins/index.html?v=in";
+       }
+     });
+     $("#logout").on({
+       click: function(){
+         window.location.href="https://black-devil963.github.io";
+       }
+     });
+     $("#regis").on({
+       click: function(){
+         window.location.href="https://black-devil963.github.io/logins/index.html?v=up";
+       }
+     });
+     $("#about").on({
+       click: function(){
+         window.location.href="https://black-devil963.github.io/logins/about.html";
+       }
+     });
+     $("#contactus").click(function(){
+      
+        // here use slideup or slideDown
+        $("#dashboard").slideToggle("slow");
+        var a=0;
+        var scrollInterval = setInterval(function() { 
+          ++a;
+    document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    if(a>=15)clearInterval(scrollInterval); 
+}, 50);
+
+      });
+   });
+   </script> 
+  <link rel="stylesheet" href="styles.ef46db3751d8e999.css"></head>
+<body>
+<div id="screen">
+    <div class="fixed" id="homes"> 
+      <div style="margin-left:1%;margin-top:5px;background-color: gray;position:relative;width:98%;height:20px">
+      
+      <a class="ACADEMICYEAR" style="color: white;margin-left: 30px;font-weight: bold;">ACADEMIC YEAR &nbsp;&nbsp;&nbsp;2021-2022</a>
+      <a class="navbar" id="login">LOGIN</a>
+      <a class="navbar" id="logout" style="left:-5px">LOGOUT</a>
+    <a class="navbar" id="about" style="left:70px">ABOUT US</a>
+    <a class="navbar" href="#contactus" style="left:170px">CONTACT US</a>
+    <a class="navbar" id="regis" style="left:290px">NEW REGISTRATION</a> 
+    </div>
+      <img src="https://drive.google.com/uc?export=view&amp;id=14vbanpK6up2dIW4zPdRGQj7bxVfqvzCd" style=" position: absolute;right:1%;" alt="">
+      <img src="https://drive.google.com/uc?export=view&amp;id=148Ye2qlCqWjXZrAPo4LWhFqbi7I_YtvX" id="scholarshiptag" style=" position: absolute;left:45%" alt="">
+      <img src="https://drive.google.com/uc?export=view&amp;id=1Zkhbz1rDXljEIvvatiGa3suTlgrvN1iP" id="nsplogo" style=" position: absolute;left:1%;top:50px" alt="" height="50px">
+    </div>
+    <div style="background-color: white;height:fit-content;margin-top: 110px;padding-top:5px ;padding-bottom: 5px;text-align: center;">
+        Please check the Announcement corner regularly for latest updates and information.<br>
+        For any technical queries, please contact <span style="color:red">Helpdesk </span>  as per contact section<br>
+        <span style="color:blue"> (from 8 AM to 8 PM on all days, excluding holidays)</span>
+    </div>
+    <div style="height:580px">
+      <aps id="lots"></aps> 
+      <aside id="lotslider" class="scrollbar" style="color:black;width: 83.5%;"> 
+          <h1 style="text-align: center;">How<span style="border:none;"> NiS </span><span style="color:#FFAA00;">Works</span> </h1>
+          <hr style="background-color:rgb(0, 0, 29);width:120px;height: 2px;border: none;margin-left: 45%;">
+          <hr style="background-color:#FFAA00;width:43px;height: 3px;border: none;margin-left: 48%;">
+          
+          <ul style="margin-left: 30px;margin-top: 50px;">
+            <h2 style="color:#665599">Register and create your profile</h2>
+            <br>
+            <li>Sign up with Facebook/Gmail/Mobile number or email id</li>
+            <li>Verify your mobile number and email address</li>
+            <li>Complete your profile i.e., present class, income, location, gender and other required fields</li>
+            <li>Download NiS app to keep track of scholarships</li>
+          </ul>
+          <ul style="margin-left: 30px;margin-top: 50px;">
+            <h2 style="color:#665599">Get notified for matching scholarships</h2>
+            <br>
+            <li>Based on your profile you will receive matching scholarship email/sms/whatsapp/app notifications</li>
+            <li>Keep your profile updated to receive relevant notifications, you can unsubscribe if you don’t want to receive notifications anymore</li>
+          </ul>
+
+          <ul style="margin-left: 30px;margin-top: 50px;">
+            <h2 style="color:#665599">Apply for scholarships</h2>
+            <br>
+            <li>Apply for scholarships with easy to fill form - most of your information will be prefilled</li>
+            <li>Upload high-quality documents with all fields visible</li>
+            <li>Regularly monitor your email/mobile for NiS notifications</li>
+            <li>Respond to questions in telephonic interviews</li>
+          </ul>
+
+          <ul style="margin-left: 30px;margin-top: 50px;">
+            <h2 style="color:#665599">Become a scholar</h2>
+            <br>
+          <li>If you are selected as a scholar, you will receive notifications from NiS</li>
+          <li>You can also check results on scholarship results page</li>
+          <li>Upload your attested documents on NiS and provide bank information</li>
+          <li>Receive scholarship award directly in your bank account</li>
+          </ul>
+          <br><br>
+          <button style="margin-left:45%;background-color:#665599;width: 150px;height: 40px;border-radius: 40px;border: none;">Register Now</button>
+          
+        </aside>
+</div> 
+<hr>
+
+<app-root></app-root>
+<apps-root></apps-root>
+<div id="contactus">
+  <p>Author: Nikhil Kumar Aman<br>
+    (click to view details)
+    </p>
+  </div>
+  <div id="dashboard">
+    Mail:<a href="mailto:hege@example.com">NikhilKumarAman26@gmail.com</a><br>
+      Contact Number : 8540040468
+    
+  </div>
+  
+</div>
+
+<footer hidden="">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy56K0Ofrbq0Tjj0kiEP4FHQJ6rFtHgaKYAw&amp;usqp=CAU" width="100%">
+ <hr style="background-color: red;height: 2px;">"!Screen size Error"<br>
+ <pre style="background-color: lightgreen;">  
+  possible solution:
+          1)Rotate your device
+          2)Use a different device
+          3)Contact us          
+ </pre>
+</footer>
+<script>
+  var a = new URLSearchParams(location.search);
+  var a=a.get('v');
+  if(a=="logout")document.getElementById("login").style.display="none";
+  else document.getElementById("logout").style.display="none";
+</script>
+<script src="runtime.4c11cec1a4ed0192.js" type="module"></script><script src="polyfills.75e1369c732a8c0f.js" type="module"></script><script src="main.9f135cd4d3e80eda.js" type="module"></script>
+
+</body></html>

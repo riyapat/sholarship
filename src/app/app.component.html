@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+ .container {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer; 
+}
+/* Hide the default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/* custom radio button */
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+.container:hover input ~ .check {
+  background-color: gray;
+}
+.container input:checked ~ .check {
+  background-color: goldenrod;
+}    
+body{
+  background-color: #eaeaea;
+}
+button{
+      border:none;
+    }
+  </style>
+</head>
+<body>
+  <div   *ngIf="division==0">
+  <div id="banserss" style="position: relative;bottom:100px"></div>
+    <br><h1 style="text-align: center;">Bringing Excellence To Students Career</h1>
+   
+  <hr  style="background-color:rgb(0, 0, 29);width:120px;height: 2px;border: none;margin-left: 46%;">
+  <hr  style="background-color:#FFAA00;width:43px;height: 3px;border: none;margin-left: 48.5%;">
+  <br>
+  <div   style="width: 99%;position: relative;padding-left: 15px;padding-top: 10px;">
+    <div *ngFor="let number of numbers" id="cards" style="height:340px;width: 285px;margin-left: 10px;display: inline-block;position: relative;">
+      <div style="position:relative;height:120px;top: 0px;left:0px;right:0px;" id="card" >
+        <img  src= {{base[(number+a)%7]}} style=" position: absolute;width: 100%;height:100%; ;left:0;top:0px"alt="">
+      </div>
+      <div id="grayslot" style="position:absolute;height:20px;top: 120px;left:0px;right:0px;background-color: #494949;"  >
+      </div>
+      <button id="namefield" style="position:absolute;bottom:10px;left:10px;font-size: 20px;background-color: transparent;color: whitesmoke;cursor: pointer;" (click)="linkage(number)">{{details[(number+a)%7]}}</button>
+    </div>
+    <br>
+    <div style="width:fit-content;margin-left: auto;margin-right:auto;">
+    <label class="container">
+      <input type="radio" name="selectvalue" (click)="update(0)" >
+      <span class="check"></span>
+    </label>
+    <label class="container">
+      <input type="radio" name="selectvalue" (click)="update(1)">
+      <span class="check"></span>
+    </label>
+    <label class="container">
+      <input type="radio" name="selectvalue" (click)="update(2)">
+      <span class="check"></span>
+    </label>
+    <label class="container">
+      <input type="radio" name="selectvalue" (click)="update(3)">
+      <span class="check"></span>
+    </label>
+    <label class="container">
+      <input type="radio" name="selectvalue" (click)="update(4)">
+      <span class="check"></span>
+    </label>
+    <label class="container">
+      <input type="radio" name="selectvalue" (click)="update(5)">
+      <span class="check"></span>
+    </label>
+  </div>
+  <br>
+</div>
+</div>
+<div *ngFor='let ins of [1,2,3,4,5,6,7];'>
+  <div *ngIf="division==ins">
+  <div  style="font-size: 24px;white-space:pre-wrap;height:fit-content;width: 99%;position: relative;padding-left: 15px;padding-top: 10px;">
+    <h1 style="text-align: center;"><u>{{details[ins-1]}}</u><button (click)="linkage(-1)" style="position: relative;top:3px;left: 10px;background-color: skyblue;border-radius: 50px;width: fit-content;height:  fit-content;padding: 5px;"><img  src="https://img.icons8.com/external-kmg-design-outline-color-kmg-design/35/null/external-backwards-arrows-kmg-design-outline-color-kmg-design.png"></button></h1>
+    
+    <br>
+    {{record[ins-1].para1}}
+    <br><br>
+    {{record[ins-1].para2}}
+    <br><br>
+    {{record[ins-1].para3}}
+    <br><br>
+    {{record[ins-1].para4}}
+    <br><br>
+    {{record[ins-1].para5}}
+    <br><br>
+    
+    </div> 
+</div>
+</div>
+
+
+</body>
+</html>
